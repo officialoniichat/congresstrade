@@ -14,8 +14,6 @@ export function initializeMetaPixel() {
     'https://connect.facebook.net/en_US/fbevents.js');
 
     window.fbq('init', META_PIXEL_ID);
-    window.fbq('track', 'PageView');
-
     return true;
   } catch (error) {
     console.error('Failed to initialize Meta Pixel:', error);
